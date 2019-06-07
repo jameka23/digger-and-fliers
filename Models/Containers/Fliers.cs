@@ -2,6 +2,6 @@ using System;
 using System.Collections.Generic;
 namespace diggersAndFliers{
     public class Fliers{
-        List<IFlying>fliers = new List<IFlying>();
+        public  List<IFlying> fliers {get; set;} = new List<IFlying>();
     }
 }

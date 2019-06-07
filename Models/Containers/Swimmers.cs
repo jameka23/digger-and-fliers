@@ -2,6 +2,6 @@ using System;
 using System.Collections.Generic;
 namespace diggersAndFliers{
     public class Swimmers {
-        List<ISwimming> swimmers = new List<ISwimming>();
+        public List<ISwimming> swimmers {get; set;} = new List<ISwimming>();
     }
 }

@@ -25,10 +25,24 @@ namespace diggersAndFliers
             TimberRattlesnakes timbersnake = new TimberRattlesnakes();
 
             // add the animals to thier corresponding container
-            // Diggers dig = new Diggers();
-            // Diggers diggingMammals = new Diggers();
-            List<Diggers> diggers = new List<Diggers>();
-            diggers.Add(ant);
+            Diggers diggersContainer = new Diggers();
+            diggersContainer.diggers.Add(ant);
+            diggersContainer.diggers.Add(earthworm);
+
+            Swimmers swimmersContainer = new Swimmers();
+            swimmersContainer.swimmers.Add(betta);
+            swimmersContainer.swimmers.Add(terrapin);
+
+            Fliers fliersContainer = new Fliers();
+            fliersContainer.fliers.Add(parakeet);
+            fliersContainer.fliers.Add(finch);
+            
+            AboveGround aboveGroundContainer = new AboveGround();
+            aboveGroundContainer.grounders.Add(coppersnake);
+            aboveGroundContainer.grounders.Add(gerbil);
+            aboveGroundContainer.grounders.Add(mice);
+            aboveGroundContainer.grounders.Add(timbersnake);
+            
         }
     }
 }
